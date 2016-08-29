@@ -34,7 +34,7 @@ If I had more time, I would:
 
 ###How would you distribute your component to other teams?
 
-** I would use git to keep track of the changes and share the repository with the team
-** Would create a git branch and create a pull request
-** Would add reviewers (Member of the team or external teams if applicable) to the pull-request 
-** Create a discussion with the team to ensure the solution is on par with everyone else’s expectations and matches requirements on a more broader scope
+* I would use git to keep track of the changes and share the repository with the team
+* Would create a git branch and create a pull request
+* Would add reviewers (Member of the team or external teams if applicable) to the pull-request 
+* Create a discussion with the team to ensure the solution is on par with everyone else’s expectations and matches requirements on a more broader scope
