@@ -1,0 +1,31 @@
+<section class="section">
+  <header class="section__header row">
+    <div class="col-xs-12">
+      <h1>Your Stocks</h1>
+    </div>
+  </header>
+
+  <div class="section__content">
+    <ul class="stock-list">
+      <li class="col-xs-4" ng-repeat="stock in $ctrl.stocks">
+        <div class="stock-list__item">
+          <p class="stock-list__symbol">{{ stock.data.symbol }}</p>
+
+          <flyout data="stock"><flyout>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="section">
+  <header class="section__header row">
+    <div class="col-xs-12">
+      <h1>Selected Stock</h1>
+    </div>
+  </header>
+
+  <div class="section__content">
+    <flyout-output></flyout-output>
+  </div>
+</section>

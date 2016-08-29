@@ -1,0 +1,25 @@
+$BASE_FONT_SIZE: 16;
+
+$FONT_SIZE_10: 10 / $BASE_FONT_SIZE * 1em;
+$FONT_SIZE_12: 12 / $BASE_FONT_SIZE * 1em;
+$FONT_SIZE_14: 14 / $BASE_FONT_SIZE * 1em;
+$FONT_SIZE_16: 16 / $BASE_FONT_SIZE * 1em;
+$FONT_SIZE_18: 18 / $BASE_FONT_SIZE * 1em;
+$FONT_SIZE_20: 20 / $BASE_FONT_SIZE * 1em;
+$FONT_SIZE_22: 22 / $BASE_FONT_SIZE * 1em;
+$FONT_SIZE_24: 24 / $BASE_FONT_SIZE * 1em;
+$FONT_SIZE_26: 26 / $BASE_FONT_SIZE * 1em;
+$FONT_SIZE_50: 50 / $BASE_FONT_SIZE * 1em;
+
+$FONT_LIGHT: 300;
+$FONT_REGULAR: 400;
+$FONT_MEDIUM: 600;
+$FONT_BOLD: 700;
+
+$app-theme: (
+  'black': #161616,
+  'light-gray': #f1f1f1,
+  'gray': gray,
+  'dark-blue': #17191f,
+  'blue': #0f8ec7,
+);

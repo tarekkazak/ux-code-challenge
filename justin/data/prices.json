@@ -1,0 +1,32 @@
+[
+    {
+        "data": {
+            "symbol": "UKT",
+            "price": {
+                "indicative": 90.76,
+                "historical": [
+                    {
+                        "date": "2011-01-04",
+                        "value": 3.98
+                    }
+                ]
+            }
+        },
+        "actions": ["5", "10", "25", "n"]
+    },
+    {
+        "data": {
+            "symbol": "BACT",
+            "price": {
+                "indicative": 182.50,
+                "historical": [
+                    {
+                        "date": "2011-01-04",
+                        "value": 127.34
+                    }
+                ]
+            }
+        },
+        "actions": ["5", "10", "25", "50", "n"]
+    }
+]

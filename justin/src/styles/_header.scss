@@ -1,0 +1,11 @@
+.header {
+  display: block;
+  width: 100%;
+  background-color: map-get($app-theme, 'blue');
+  padding: 20px 15px;
+
+  &__logo {
+    font-size: $FONT_SIZE_24;
+    color: white;
+  }
+}

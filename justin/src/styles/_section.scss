@@ -1,0 +1,10 @@
+.section {
+  margin-bottom: 50px;
+  @extend .clearfix;
+  
+  &__header {
+    border-bottom: 1px solid map-get($app-theme, 'light-gray');
+    padding: 20px 0;
+    margin-bottom: 20px;
+  }
+}
