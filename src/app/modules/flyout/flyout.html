@@ -1,0 +1,36 @@
+<div class="flyout">
+  <p
+    class="flyout__pill"
+    ng-class="{
+      'flyout__pill--is-active': $ctrl.isActive
+    }"
+    ng-click="$ctrl.toggleFlyoutPannel($event, $ctrl.stock)">
+    {{$ctrl.stock.data.price.indicative}}
+  </p>
+
+  <div class="flyout-pannel" ng-class="{
+    'flyout-pannel--is-open': $ctrl.isActive
+  }">
+    <header class="flyout-pannel__header">
+      <p class="flyout-pannel__title">Request Price</p>
+      <small class="flyout-pannel__details">
+        {{$ctrl.stock.data.symbol}}
+        {{$ctrl.stock.data.price.historical[0].value}}
+        {{$ctrl.stock.data.price.historical[0].date | date:'MMM yyyy'}}
+      </small>
+    </header>
+
+    <div class="flyout-pannel__actions-bar">
+      <ul class="flyout-pannel__actions">
+        <li class="flyout-pannel__action" ng-repeat="action in $ctrl.stock.actions">
+          <button
+            type="button"
+            class="flyout-pannel__action-btn"
+            ng-click="$ctrl.handleClick($ctrl.stock.data, action)">
+            {{ action }}
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+.stock-list {
+  &__item {
+    text-align: center;
+    border: 1px solid map-get($app-theme, 'light-gray');
+    padding: 15px;
+  }
+
+  &__symbol {
+    font-size: $FONT_SIZE_50;
+    font-weight: $FONT_LIGHT;
+    color: map-get($app-theme, 'dark-blue');
+    margin-bottom: 20px;
+  }
+}

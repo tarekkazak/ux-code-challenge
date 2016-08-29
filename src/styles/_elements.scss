@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: map-get($app-theme, 'light-gray');
+}
+
+body,
+button {
+  font-family: 'news-gothic-std', sans-serif;
+  font-size: $BASE_FONT_SIZE * 1px;
+  font-weight: $FONT_REGULAR;
+}
+
+body {
+  color: map-get($app-theme, 'black');
+}
+
+main {
+  background-color: white;
+  min-height: calc(100% - 65px - 124px);
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: $FONT_SIZE_24;
+  font-weight: $FONT_LIGHT;
+}
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+strong {
+  font-weight: $FONT_MEDIUM;
+}
+
+small {
+  font-style: italic;
+  color: map-get($app-theme, 'gray');
+}
+
+dl {
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  > dt {
+    font-weight: $FONT_MEDIUM;
+    margin-bottom: 5px;
+  }
+
+  > dd {
+    color: map-get($app-theme, 'gray');
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

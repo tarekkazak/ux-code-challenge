@@ -1,0 +1,36 @@
+<div class="flyout-output">
+  <dl ng-if="$ctrl.hasOutput">
+    <dt>Selected Stock</dt>
+    <dd>{{$ctrl.output.symbol}}</dd>
+
+    <dt>Price</dt>
+    <dd>{{ $ctrl.output.price.indicative | currency:"USD$" }}</dd>
+
+    <dt>Historical Price</dt>
+    <dd ng-repeat="price in $ctrl.output.price.historical">
+      <strong>{{ price.date | date:"MMMM dd, yyyy" }}:</strong> {{ price.value | currency:"USD$" }}
+    </dd>
+  </dl>
+
+  <dl ng-if="$ctrl.output.units">
+    <dt>Number of Units</dt>
+    <dd ng-if="!$ctrl.isCustomUnit($ctrl.output.units)">
+      {{ $ctrl.output.units }}
+    </dd>
+
+    <dd ng-if="$ctrl.isCustomUnit($ctrl.output.units)">
+      <input
+        type="number"
+        name="custom-units"
+        id="custom-units"
+        ng-model="$ctrl.customUnits"
+        ng-keyup="$ctrl.calculateCustomQuote()">
+    </dd>
+
+    <dt>Quote</dt>
+    <dd ng-if="$ctrl.quotePrice">{{ $ctrl.quotePrice | currency:"USD$" }}</dd>
+    <dd ng-if="!$ctrl.quotePrice">Enter a number of units.</dd>
+  </dl>
+
+  <small ng-if="!$ctrl.hasOutput">No stock selected.</small>
+</div>
