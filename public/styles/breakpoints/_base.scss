@@ -1,0 +1,182 @@
+/******************************************************************
+
+Mobile First as Base
+
+******************************************************************/
+
+/*********************
+GENERAL STYLES
+*********************/
+
+html {
+  font-family: $font;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  font-family: $font;
+  background-color: $lighter-black;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/*********************
+LAYOUT & GRID STYLES
+*********************/
+
+.container,
+.main-wrapper {
+  width: 100%;
+}
+
+/******************************************************************
+H1, H2, H3, H4, H5 article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section, summary STYLES
+******************************************************************/
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5 {
+  font-family: $font;
+  text-rendering: optimizelegibility;
+}
+
+/*********************
+MAIN CONTAINER
+*********************/
+
+.main-container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  max-width: 310px;
+  width: 28%;
+  min-width: 295px;
+  padding: 1.5em;
+}
+
+/*********************
+PANEL CONTAINER
+*********************/
+
+.panel-container {
+  padding: 0.5em;
+  background-color: transparent;
+}
+
+/*********************
+DETAIL
+*********************/
+
+details > summary {
+  color: $white;
+  cursor: pointer;
+  margin-top: 3em;
+  margin-left: 1em;
+  padding: $padding-1em;;
+  font-size: 1em;
+  &:hover {
+    color: $menu-hover-state;
+  }
+  > i {
+    margin-right: $margin-right-04;
+  }
+}
+
+/*******************
+SECTIONS
+*********************/
+
+.panel-container > .request-panel-top-section > .info-container {
+  padding: $padding-0-10;
+  > .info {
+    font-size:  $large-font;
+    > {
+      h3 {
+        color: $white;
+        text-shadow: $border-double-thickness $border-double-thickness $text-black-shadow;
+        font-weight: $semi-bold;
+      }
+      h4 {
+        color: $gray;
+        font-weight: $semi-bold;
+        padding-bottom:  $padding-bottom-5;
+        text-shadow: $border-double-thickness $border-double-thickness #333;
+        font-size: $small-font;
+      }
+      * {
+        margin: $no-margin;
+      }
+    }
+  }
+}
+
+.request-panel-top-section, .request-panel-bottom-section {
+  padding: $padding-7;
+}
+.request-panel-top-section {
+  background: -webkit-linear-gradient(bottom, $dark-gray-gradient, $mid-gray-gradient);
+  background: -o-linear-gradient(bottom, $dark-gray-gradient, $mid-gray-gradient);
+  background: -moz-linear-gradient(bottom, $dark-gray-gradient, $mid-gray-gradient);
+  background: linear-gradient(to bottom, $dark-gray-gradient, $mid-gray-gradient2);
+  box-shadow:$border-single-thickness$border-single-thickness$border-single-thickness $lighter-gray-gradient, $border-double-thickness $border-double-thickness $mid-gray-gradient3 inset;
+  border-radius: $border-radius-mid;;
+  border-bottom-left-radius: $border-bottom-left-radius;
+}
+
+.request-panel-bottom-section {
+  width: $width-28pc;
+  box-shadow: $rgba-value-single $rgba-value-single $rgba-value-single $off-gray-rgba-lighter, $rgba-value-double $rgba-no-value $mid-gray-gradient3 inset;
+  border-radius: $border-radius-mid;
+  border-top-left-radius: $border-top-left-radius;
+  border-top-right-radius: $border-top-right-radius;
+  background: $dark-gray;
+  padding:  $no-padding;
+}
+
+/*******************
+ACTION CONTAINER, ACTION
+*********************/
+
+.actions-container {
+  background-color: $black;
+  border-radius: $border-radius-mid;
+}
+
+.actions {
+  padding: $padding-0-10;
+  margin: $no-margin;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-start;
+}

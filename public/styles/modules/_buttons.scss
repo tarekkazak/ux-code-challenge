@@ -1,0 +1,72 @@
+/******************************************************************
+
+Buttons
+
+NOTE:
+* If time would permit to improve this coding challenge:
+  * All individual button styles would get defined seperately here as
+  an independent module and would get imported into the rest of the styles
+
+******************************************************************/
+
+.actions-container > .actions > .small-btn-container {
+  padding: $no-padding;
+  > button {
+    background-image: $button-bg-img-data;
+    background-image: -webkit-linear-gradient($white-rgba-lightest, $black-rgba-lightest);
+    background-image: linear-gradient($white-rgba-lightest, $black-rgba-lightest);
+    background-origin: border-box;
+    border:$border-single-thickness solid $black-rgba-lightest;
+    box-shadow: 0$border-single-thickness $border-double-thickness $black-rgba-lightest, 0$border-single-thickness $white-rgba-lightest inset;
+    border-radius: $border-radius-mid;
+    cursor: pointer;
+    display: inline-block;
+    font-size: font-size-8-7-5pc;
+    line-height: $line-height-1-5;;
+    margin: $margin-05-0;;
+    padding: $padding025-1;
+    text-align: center;
+    white-space: nowrap;
+    &:hover {
+      box-shadow: 0$border-single-thickness $border-double-thickness $off-white-rgba-darker inset;
+    }
+    &:active, &:focus {
+      background: linear-gradient(to bottom, $mid-blue, $dark-blue);
+    }
+    text-shadow:$border-single-thickness$border-single-thickness #949191;
+    background-color: $white;
+    color: $black;
+    padding: $padding-5-10;
+    color: $off-whit;
+    background-color: $black;
+    margin-right: $margin-right-04;
+    min-width: $button-min-width;
+  }
+}
+
+.panel-container > .request-panel-bottom-section > .large-btn-container > button {
+  background-image: $button-bg-img-data;
+  background-image: -webkit-linear-gradient($white-rgba-lightest, $black-rgba-lightest);
+  background-image: linear-gradient($white-rgba-lightest, $black-rgba-lightest);
+  background-origin: border-box;
+  border:$border-single-thickness solid $black-rgba-lightest;
+  box-shadow: 0$border-single-thickness $border-double-thickness $black-rgba-lightest, 0$border-single-thickness $white-rgba-lightest inset;
+  border-radius: $border-radius-mid;
+  cursor: pointer;
+  display: inline-block;
+  font-size: font-size-8-7-5pc;
+  line-height: $line-height-1-5;;
+  margin: $margin-05-0;;
+  padding: $padding025-1;
+  text-align: center;
+  white-space: nowrap;
+  text-shadow:$border-single-thickness$border-single-thickness #949191;
+  background-color: white;
+  color: black;
+  padding: $padding-5-10;
+  color: $off-whit;
+  background-color: $black;
+  margin-right: $margin-right-04;
+  min-width: $button-min-width;
+  margin-left: $margin-left-05;
+}
