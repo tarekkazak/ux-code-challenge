@@ -1,0 +1,60 @@
+/******************************************************************
+
+Variables
+
+******************************************************************/
+
+$black:                       #101215;
+$lighter-black:               #17191f;
+$white:                       #ffffff;
+$mid-blue:                    #318fbf;
+$dark-blue:                   #073476;
+$off-white:                   #fefefe;
+$text-black-shadow:           #383838;
+$menu-hover-state:            #03A9F4;
+$off-black:                   #272c35;
+$gray:                        #84878d;
+$dark-gray:                   #272c35;
+$line-height-1-5:             1.5;
+
+$border-double-thickness:     2px;
+$border-single-thickness:     1px;
+$dark-gray-gradient:          rgba(40, 45, 54, 0.69);
+$mid-gray-gradient:           rgba(39, 44, 53);
+$mid-gray-gradient2:          rgb(39, 44, 53);
+$mid-gray-gradient3:          rgb(42, 47, 56);
+$lighter-gray-gradient:       rgba(88, 99, 111, 0.4);
+$black-rgba-lightest:         rgba(0, 0, 0, 0.1);
+$white-rgba-lightest:         rgba(255, 255, 255, 0.1);
+$off-white-rgba-darker:       rgba(189, 189, 189, 0.1);
+$off-gray-rgba-lighter:       rgba(88, 99, 111, 0.4);
+$rgba-no-value:               0px;
+$rgba-value-single:           1px;
+$rgba-value-double:           2px;
+$container-min-width:         295px;
+$container-max-width:         310px;
+$button-min-width:            36px;
+$width-28pc:                  28%;
+
+$padding-1em:                 1em;
+$no-margin:                   0;
+$margin-right-04:             0.4em;
+$margin-right-1em:            1em;
+$margin-left-05:              0.5em;
+$margin-05-0:                 0.5em 0;
+$padding-0-10:                0 10px;
+$padding025-1:                0.25em 1em;
+$padding-5-10:                5px 10px;
+$padding-7:                   7px;
+$padding-bottom-5:            5px;
+$no-padding:                  0;
+
+
+$font-size-8-7-5pc:           87.5%;
+
+$border-radius-mid:           0.25em;
+$border-bottom-left-radius:   0;
+$border-top-left-radius:      0;
+$border-top-right-radius:     0;
+
+$button-bg-img-data:          url("data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%3F%3E%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20version%3D%221.0%22%3E%3Cdefs%3E%3ClinearGradient%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%220%22%20y2%3D%22100%25%22%20id%3D%22g%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22rgb%28255%2C255%2C255%29%22%20stop-opacity%3D%220.1%22/%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22rgb%280%2C0%2C0%29%22%20stop-opacity%3D%220.1%22/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20x%3D%220%22%20y%3D%220%22%20fill%3D%22url%28%23g%29%22%20width%3D%22100%25%22%20height%3D%22100%25%22/%3E%3C/svg%3E");
